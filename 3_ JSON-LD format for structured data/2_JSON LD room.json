@@ -1,0 +1,29 @@
+{
+    "@context": "https://schema.org",
+    "@type": "Place",
+        "name": "Salle S2.21",
+    	"additionalProperty": [
+        {
+            "@type": "PropertyValue",
+            "name": "temperature",
+            "unitCode": "°C",
+            "value": 20
+        },
+        {
+            "@type": "QuantitativeValue",
+            "name": "Fenêtre 1",
+            "value": "ouverte"
+        },
+        {
+            "@type": "QuantitativeValue",
+            "name": "Fenêtre 2",
+            "value": "fermée"
+        },
+        {
+            "@type": "QuantitativeValue",
+            "name": "Chauffage",
+            "value": "éteint"
+        }
+    ]
+
+}

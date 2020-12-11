@@ -1,0 +1,23 @@
+<script type="application/ld+json"> 
+
+{
+	"@context":"https://schema.org",
+	"@type":"floorLevel",
+		"name":"étage S2",
+		"additionalProperty": [
+			{
+			"@type":"Room",
+				"description":"salle de cours",
+				"name":"S214",
+				"maximumAttendeeCapacity":48
+				},
+		{
+			"@type":"Room",
+				"description":"salle de cours avec matériel informatique",
+				"name":"S221",
+				"maximumAttendeeCapacity":20
+				}
+			]
+	}
+
+</script>
