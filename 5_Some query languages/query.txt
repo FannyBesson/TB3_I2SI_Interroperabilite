@@ -1,0 +1,18 @@
+JSONPath query
+
+$.temperature.value
+
+$.weather.ForecastSlots[?(@.hour==16)].temperature.value
+
+$.weather.ForecastSlots[?(@.hour==16)].humidity
+
+$.weather.ForecastSlots[?(@.humidity>65)].weather
+
+
+XPath query
+
+//cours[Date='2020-09-09'][Type='TP/TD']/Début
+
+//cours[Date gt '2020-09-25']/Titre
+
+xs:time(//cours[Date='2020-09-20'][Type='TP/TD']/Début)-xs:time(//cours[Date='2020-09-20'][Type='TP/TD']/Fin)
