@@ -1,0 +1,126 @@
+openapi: 3.0.0
+info:
+  title: Ventilation et Chauffage à Fayol
+  description: Accèder à la température et à l'état des fenêtres et des radiateurs pour chacune des salles de l'institut Fayol. 
+  version: 0.0.1
+
+servers:
+  url: http//api.example.org/
+
+paths:
+  /users:
+    get:
+      summary: Renvoie la liste des étages de l'institut Fayol.
+      responses:
+        '200':    # status code
+          description: Un tableau JSON avec le noms des étages
+          content:
+            application/json:
+              schema: 
+                type: array
+                items: 
+                  type: string
+
+  /users/{storeyID}:
+    get:
+      summary: Renvoie la liste des salles d'un étage.
+      parameters:
+        - name: storeyID
+          in: path
+          required: true
+          description: le nom de l'étage
+          schema:
+            type: string
+      responses:
+        '200':    # status code
+          description: Un tableau JSON avec le noms des salles
+          content:
+            application/json:
+              schema: 
+                type: array
+                items: 
+                  type: string
+        '404':
+          description: L'étage n'a pas été trouvé
+
+  /users/{storeyID}/{roomID}:
+    get:
+      summary: Renvoie la température et l'état des fenêtres et des radiateurs d'une salle.
+      parameters:
+        - name: storeyID
+          in: path
+          required: true
+          description: le nom de l'étage
+          schema:
+            type: string
+        - name: roomID
+          in: path
+          required: true
+          description: le nom de la salle
+          schema:
+            type: string
+      responses:
+        '200':    # status code
+          description: Un tableau JSON avec la température, l'état de la fenêtre et l'état du radiateur
+          content:
+            application/json:
+              schema: 
+                $ref: '#/components/schemas/Room'
+        '404':
+          description: La salle n'a pas été trouvé
+
+    put:
+      summary: Pouvoir changer le statut d'une fenêtre ou d'un radiateur
+      parameters:
+        - name: storeyID
+          in: path
+          required: true
+          description: le nom de l'étage
+          schema:
+            type: string
+        - name: roomID
+          in: path
+          required: true
+          description: le nom de la salle
+          schema:
+            type: string
+      requestBody:
+        content:
+            application/json:
+              schema: 
+                $ref: '#/components/schemas/Room'
+          
+      responses:
+        '200':
+          description: La salle a été mise à jour
+        '404':
+          description: La salle n'a pas été trouvé
+
+
+components:
+  schemas:
+    Room:
+      type: object
+      properties:
+        Température:
+          description: température dans la pièce,en °C
+          type: integer
+          format: int64
+        Fenêtres:
+          description: liste des fenêtres présentes dans la salle et de leur status (ouvert/fermé)
+          type: array
+          items: 
+            type: object
+              properties:
+                name: string
+                status: string
+                enum: ["ouverte","fermée"]
+        CHauffages:
+          description: liste des chauffages présents dans la salle et de leur status (allumé/éteint)
+          type: array
+          items: 
+            type: object
+              properties:
+                name: string
+                status: string
+                  enum: ["allumé","éteint"]

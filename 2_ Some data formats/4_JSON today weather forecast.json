@@ -1,0 +1,44 @@
+{
+    "city": "Saint-Etienne",
+    "date": "Oct 23 2020",
+    "humidity": 82,
+    "temperature": {
+        "unit": "°C",
+        "value": 16
+    },
+    "visibility": 10.0,
+    "weather": "overcast clouds",
+    "weatherForecastSlots": [
+        {
+            "hour": "16",
+            "temperature": {
+                "unit": "°C",
+                "value": 16
+            },
+            "weather": "light rain",
+            "wind speed": 2.0,
+            "humidity": 88
+        },
+        {
+            "hour": "17",
+            "temperature": {
+                "unit": "°C",
+                "value": 14
+            },
+            "weather": "light rain",
+            "wind speed": 2.1,
+            "humidity": 89
+        },
+        {
+            "hour": "18",
+            "temperature": {
+                "unit": "°C",
+                "value": 14
+            },
+            "weather": "light rain",
+            "wind speed": 1.8,
+            "humidity": 88
+        }
+    ],
+    "wind speed": 2.6
+}

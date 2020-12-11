@@ -1,0 +1,53 @@
+<?xml version="1.0" standalone="yes"?>
+<album>
+	<nomAlbum link="https://musicbrainz.org/rele/eea1052d-57d3-45b5-974e-ce7f386fa8c2">XSCAPE 
+		</nomAlbum>
+	<chanteur link="https://musicbrainz.org/artist/f27ec8db-af05-4f36-916e-3d57f91ecf5e">Michael Jackson 
+		</chanteur>
+	<ListePistes>
+		<chanson>
+			<numero link="https://musicbrainz.org/track/60b2c0fa-d633-4a67-a2b4-e7c699274c26">1</numero>
+			<titre link="https://musicbrainz.org/recording/bd744206-d157-4b4f-94a7-ab33a0b20179">Love Never Felt so Good 
+					
+				
+				
+				<vocals link="https://musicbrainz.org/artist/f27ec8db-af05-4f36-916e-3d57f91ecf5e">Michael Jackson (&quot;King of Pop&quot;)</vocals>
+				<recordingOf link="https://musicbrainz.org/work/952bd5f4-4f86-4992-a8c0-e45f07d841df">
+					Love Never Felt so Good
+						
+					
+					
+					<writer link="https://musicbrainz.org/artist/420c6768-0885-415a-bb59-d6a275121125">
+						Paul Anka
+							
+						
+						
+						<date>1983</date></writer>
+					<writer link="https://musicbrainz.org/artist/f27ec8db-af05-4f36-916e-3d57f91ecf5e">Michael Jackson (&quot;King of Pop&quot;)
+							
+						
+						
+						<date>1983</date></writer>
+					<hasRevision link="https://musicbrainz.org/work/3aead145-590a-4eb8-b716-b4daf9ea6bea">Love Never Felt so Good
+							
+						
+						
+						<information>revised lyric version recorded by Jhonny Mathis</information></hasRevision>
+				</recordingOf>
+			</titre>
+			<evaluation>4 
+				</evaluation>
+			<durée>3:54 
+				</durée>
+		</chanson>
+		<chanson>
+			<numero link="https://musicbrainz.org/track/510e4e69-3020-42e3-8af2-bbe7c9227d80">2
+				</numero>
+			<titre link="https://musicbrainz.org/recording/6c9aee0a-ffa7-4ce7-a343-1946addcd8d2">Chicago
+					
+				
+				
+				<vocals link="https://musicbrainz.org/artist/f27ec8db-af05-4f36-916e-3d57f91ecf5e">Michael Jackson (&quot;King of Pop&quot;)</vocals></titre>
+		</chanson>
+	</ListePistes>
+</album>
